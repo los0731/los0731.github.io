@@ -72,9 +72,45 @@ li {
 }
 
 .list-tutorials li .guide {
-  border-left: 4px solid #ECEFF1;
   padding-top: 24px;
+  border-left: 4px solid #ECEFF1;
 }
+
+.list-tutorials.container-fluid {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  max-width: 100%;
+}
+
+.coding-practice {
+  padding-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  .coding-practice > div {
+    min-height: calc(100vh - 280px);
+  }
+
+  .coding-practice .editor,
+  .coding-practice .complete {
+
+  }
+
+  .coding-practice .cp_embed_wrapper,
+  .coding-practice .cp_embed_iframe {
+    margin: 0;
+    height: calc(100% - 20px);
+  }
+
+  .coding-practice .CodeMirror-scroll {
+    margin: 0;
+  }
+}
+
+
 
 .btn-progress-group {
   /* 이전/다음 버튼을 감싸고 있는 div */
