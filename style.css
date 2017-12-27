@@ -1,0 +1,62 @@
+
+h1, h2, h3, h4, b {font-weight: 900;}
+
+p, h5 {font-size: 20px; line-height: 34px;}
+
+h1, h2, h3 {margin: 80px 0 40px 0;}
+
+ul {padding-left: 24px; margin: 16px 0;}
+
+li {margin: 0 0 8px 0; font-size: 20px; line-height: 34px;}
+
+hr {margin: 80px 0;}
+
+img, .btn {margin:24px 0;}
+
+code {background-color: #ECEFF1; color: #607D8B;}
+
+blockquote {margin: 24px 0; padding: 8px 16px; border-left: 4px solid #ECEFF1; font-size: 24px; line-height: 36px; font-style: italic;}
+
+pre {padding: 16px; background-color: #ECEFF1; border-radius: 4px; font-size: 18px; color: #455A64;}
+
+.embed-responsive {border: 8px solid #263238}
+
+.cp_embed_wrapper {margin: 16px 0;}
+
+
+.container-lg {max-width: 1400px;}
+
+.container-sm,
+header.container,
+article.container  {max-width:720px;}
+
+.list-tutorials {
+  list-style: none;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.list-tutorials li,
+.list-tutorials .cp_embed_wrapper {
+  margin: 0;
+}
+
+.list-tutorials li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.list-tutorials li .guide {
+  border-left: 4px solid #ECEFF1;
+  padding-top: 24px;
+}
+
+
+
+.btn-progress-group {
+  /* 이전/다음 버튼을 감싸고 있는 div */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
