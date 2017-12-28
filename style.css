@@ -91,10 +91,11 @@ li {
 }
 
 .editor-full {
-  background: #263238;
-  height: calc(100vh - 88px);
+  margin: 0;
   width: 100vw;
+  height: calc(100vh - 88px);
   min-height: 480px;
+  background: #263238;
 }
 
 /* editor full */
