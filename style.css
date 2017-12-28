@@ -89,3 +89,25 @@ li {
   margin-bottom: 40px;
   text-align: center;
 }
+
+.editor-full {
+  background: #263238;
+  height: calc(100vh - 88px);
+  width: 100vw;
+  min-height: 480px;
+}
+
+/* editor full */
+.editor-full .editor,
+.editor-full .complete,
+.editor-full .cp_embed_wrapper,
+.editor-full .cp_embed_iframe {
+  margin: 0;
+  padding: 0;
+  height: calc(100vh - 88px);
+  min-height: 480px;
+}
+
+header .btn-group {
+  margin-left: auto;
+}
