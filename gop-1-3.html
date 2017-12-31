@@ -1,13 +1,12 @@
 <!doctype html>
 <html>
 <head>
-  <title>GOP 1-3 Tag는 열고 닫습니다.</title>
+  <title>GOP 1-3 HTML은 머리와 몸으로</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" >
 </head>
-
 <body>
 <!--홈으로 가기 버튼입니다-->
 <header class="container">
@@ -15,32 +14,39 @@
 </header>
 
 <!--여기서부터 아티글 입니다.-->
+<article class="container">
+  <h1 ><b>HTML은 머리와 몸으로.</b></h1>
+</article>
 <div class="container">
-  <article class="container">
-    <h1 >
-      <b>열고 닫습니다.</b>
-    </h1>
-  </article>
-  <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514270942/gop-1-3-1_f3djvm.png" width="100%">
-  <article class="container">
-    <p>
-      HTML에서 tag(태그)는 어떤 <code>속성</code>을 담고 있는 코드라고 생각할 수 있어요. 원피스에서 고무고무 열매를 먹은 루피가 <code>고무처럼 늘어난다</code>는 속성이 있듯이 말이죠. 하지만 태그를 사용할 때는 작은 규칙이 있습니다. 바로 열고 닫는다는 것입니다. 태그는 <code>&lt;tag&gt;</code> 이렇게 열고, <code>&lt;/tag&gt;</code> 이렇게 닫습니다. <code>/</code> 마크가 닫는 의미라는 걸 눈치챘나요? 맞아요. 태그는 열고 닫는 그 중간 영역에 태그의 속성이 적용됩니다. 이렇게요.
-    </p>
-
-    <pre>
-&lt;고무고무&gt;루피&lt;/고무고무&gt;
-&lt;스트롱&gt;치킨이 먹고 싶은 마음&lt;/스트롱&gt;
-&lt;고급스러운&gt;루이비통&lt;/고급스러운&gt;
-&lt;달콤&gt;초콜릿&lt;/달콤&gt;</pre>
-
-    <p><b>다음에는 HTML이 어떤 구조로 이루어 졌는지 알아봅시다.</b></p>
-  </article>
+  <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514706130/img-html-default_f9idgu.png" width="100%">
 </div>
+<article class="container">
+  <p>
+    HTML의 각 부분을 알아봅시다.
+  </p>
+  <ul>
+    <li><code>&lt;!DOCTYPE html&gt;</code><br>
+      모든 html로 작성된 문서의 최 상단에는 "내가 HTML 이다!"라는 의미를 담은 코드를 한 줄 넣게 됩니다. 예컨대 (외울필요없는!) <code>&lt;!DOCTYPE html&gt;</code> 이런 코드들이죠. 저 코드가 첫 줄에 작성되어 있으면 브라우저는 이 파일이 "아. 너 HTML이구나?" 하고 인식합니다.
+    </li>
+    <li>
+      <code>&lt;head&gt;&lt;/head&gt;</code><br>
+      <code>head</code>(해드/머리)부분에는 이 HTML 문서의 속성이나 눈에 보이지 않는 규칙들이 담겨있습니다. 하지만 지금 우리가 배울 필요는 없습니다. 무시하고 넘어갑시다. 조금 더 알고싶다면
+      <a href="https://ofcourse.kr/html-course/head-%ED%83%9C%EA%B7%B8" target="_blank">이곳</a>을 클릭하세요.
+    </li>
+    <li>
+      <code>&lt;body&gt;&lt;/body&gt;</code><br>
+      우리가 웹페이지를 보면서 눈에 보이는 모든 것을 작성하는 공간이 바로 이곳입니다. 이곳에 로고 이미지도 넣고, 버튼도 넣고, 글씨도 넣죠. 맞아요. 우리는 앞으로 대다수의 코드를 이곳에 작성하게 될 거에요.
+    </li>
+  </ul>
+  <p>
+    <b>다음 시간에는 <code>tag(태그)</code>에 대하여 알아보겠습니다.</b>
+  </p>
+</article>
 
 <!-- 이전/다음 버튼 그룹 -->
 <div class="container btn-progress-group">
   <a href="gop-1-2.html" class="btn btn-lg btn-dark">〈 PREV</a>
-  <a href="gop-1-5.html" class="btn btn-lg btn-dark">NEXT 〉</a>
+  <a href="gop-1-4.html" class="btn btn-lg btn-dark">NEXT 〉</a>
 </div>
 
 <!-- 라이브리 시티 설치 코드 -->

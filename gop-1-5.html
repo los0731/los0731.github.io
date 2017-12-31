@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>GOP 1-4 HTML은 머리와 몸으로</title>
+  <title>GOP 1-5 기초적인 태그들</title
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -14,36 +14,102 @@
 </header>
 
 <!--여기서부터 아티글 입니다.-->
-<div class="container">
-  <article class="container">
-    <h1 >
-      <b>HTML은 머리와 몸으로.</b>
-    </h1>
-  </article>
-  <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514706130/img-html-default_f9idgu.png" width="100%">
-  <article class="container">
-    <p>
-      HTML은 이렇게 생겼어요. 각 부분을 알아볼까요?
-    </p>
-    <ul>
-      <li><code>&lt;!DOCTYPE html&gt;</code><br>
-        모든 html 문서의 최 상단에는 "내가 HTML 이다!"라는 의미를 담은 코드를 한 줄 넣게 됩니다. 예컨대 (외울필요없는!) <code>&lt;!DOCTYPE html&gt;</code> 이런 코드들이죠. 저 코드가 첫 줄에 작성되어 있으면 브라우저는 이 파일이 "아. 너 HTML이구나?" 하고 인식합니다.
-      </li>
-      <li>
-        <code>&lt;head&gt;&lt;/head&gt;</code><br>
-        <code>head</code>(해드/머리)부분에는 이 HTML 문서의 속성이나 눈에 보이지 않는 규칙들이 담겨있습니다. 하지만 지금 우리가 배울 필요는 없습니다. 무시하고 넘어갑시다. 조금 더 알고싶다면
-        <a href="https://ofcourse.kr/html-course/head-%ED%83%9C%EA%B7%B8" target="_blank">이곳</a>을 클릭하세요.
-      </li>
-      <li>
-        <code>&lt;body&gt;&lt;/body&gt;</code><br>
-        우리가 웹페이지를 보면서 눈에 보이는 모든 것을 작성하는 공간이 바로 이곳입니다. 이곳에 로고 이미지도 넣고, 버튼도 넣고, 글씨도 넣죠. 맞아요. 우리는 앞으로 대다수의 코드를 이곳에 작성하게 될 거에요.
-      </li>
-    </ul>
-    <p>
-      <b>자, 이제 다음 시간부터는 본격적으로 HTML 코딩을 해봅시다.</b>
-    </p>
-  </article>
-</div>
+<article class="container">
+  <h1><b>가장 기초적인 태그들</b></h1>
+  <p>아래의 태그들은 가장 많이 쓰면서도 가장 기초적인 태그들 입니다. 다음 챕터 부터 하나하나 살펴 볼 것이기 때문에 외울 필요 없어요. 가벼운 마음으로 이런 태그가 있다는 것만 정도만 알아둡시다.</p>
+</article>
+
+<ul class="list-tutorials container-fluid container-lg">
+  <li id="tag-none">
+    <div class="guide col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+      <h4><code>태그가 없다면?</code></h4>
+      <p>
+        태그가 없는 상태로 글을 쓰면 어떻게 될까요? 글은 잘 나오는데, 줄바뀜도 안되고 영 보기가 쉽지 않네요.
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+      <p data-height="400" data-theme-id="32108" data-slug-hash="25a56f909ceeb7ad8eeb750d8f70ba2d" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="html tag - none" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/25a56f909ceeb7ad8eeb750d8f70ba2d/">html tag - none</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+  <li id="tag-h1">
+    <div class="guide col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+      <h4><code>&lt;h1&gt;</code></h4>
+      <p>
+        Heading(헤딩/제목) 태그는 말 그대로 제목 태그입니다. 문서의 제목 글에 이 태그를 쓰죠. h1~h6까지 있으며, 숫자가 작아질수록 크기가 커집니다. <code>&lt;h1&gt;</code>태그가 끝날때에는 자동으로 줄바뀜이 적용됩니다.
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+      <p data-height="400" data-theme-id="32108" data-slug-hash="3f2289aa32b01cde05473d124bc2697f" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="html tag - h1~h6" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/3f2289aa32b01cde05473d124bc2697f/">html tag - h1~h6</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+  <li id="tag-p">
+    <div class="guide col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+      <h4><code>&lt;p&gt;</code></h4>
+      <p>
+        Paragraph(패러그래프/문단) 문단 태그는 내용이 같은 글줄 단위로 사용합니다. 뉴스 기사나 블로그의 본문이 바로 이 <code>&lt;p&gt;</code>태그 입니다. <code>&lt;p&gt;</code>태그가 끝날때에는 자동으로 줄바뀜이 적용됩니다.
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+      <p data-height="400" data-theme-id="32108" data-slug-hash="75a95a81a82fbea3b96abd5b74f79328" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="html tag - p" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/75a95a81a82fbea3b96abd5b74f79328/">html tag - p</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+  <li id="tag-br">
+    <div class="guide col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+      <h4><code>&lt;br&gt;</code></h4>
+      <p>
+        줄을 바꾸고 싶나요? 줄을 바꾸고 싶은 부분에 <code>&lt;br&gt;</code>을 입력하세요. <code>br</code>은 single line <b>br</b>eak의 줄인 말로, 줄바꿈 이란 뜻입니다.
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+      <p data-height="400" data-theme-id="32108" data-slug-hash="7097cb73075e66e8c9d284a40adaea13" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="html tag - br" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/7097cb73075e66e8c9d284a40adaea13/">html tag - br</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+  <li id="tag-b">
+    <div class="guide col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+      <h4><code>&lt;b&gt;</code></h4>
+      <p>
+        <code>&lt;b&gt;</code>는 <b>bold, 두꺼운</b>이라는 의미입니다. <code>&lt;i&gt;</code>는 <i>italic, 기울어진</i>이라는 뜻입니다. 이렇게 글씨를 꾸며주는 태그들도 있어요.
+      </p>
+
+    </div>
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+      <p data-height="300" data-theme-id="32108" data-slug-hash="ea25b70eb3dff8dea1744697b5329ab2" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="html tag - bold" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/ea25b70eb3dff8dea1744697b5329ab2/">html tag - bold</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+  <li id="tag-img">
+    <div class="guide col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+      <h4><code>&lt;img&gt;</code></h4>
+      <p>
+        이미지는 가장 많이 사용하는 요소(Element)중 하나죠! 이미지는 어떻게 쓸까요?
+      </p>
+      <pre><code>&lt;img src="이미지 주소 (url)" alt="이미지의 이름" width="이미지 넓이(숫자)"&gt;</code></pre>
+      <p>
+        먼저, 이미지 태그는 예외적으로 닫는 태그가 없는데, <code>&lt;p&gt;</code>처럼 무언가를 감싸고 그 안에 글씨나 다른 요소를 넣을 필요가 없기 때문입니다.
+      </p>
+      <p>
+        이미지 태그에 사용된 <code>width="300"</code>의 300 뒤에 아무것도 입력하지 않으면 기본단위인 <code>px</code>로 적용됩니다. 하지만 <code>300%</code>라고 할 경우, <code>%</code>로 적용할 수 있어요.
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+      <p data-height="400" data-theme-id="32108" data-slug-hash="285c77ddbd4e9ab803422979ed6fe557" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="html tag - img" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/285c77ddbd4e9ab803422979ed6fe557/">html tag - img</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+</ul>
+
+<article class="container">
+  <p><b>다음 시간에는 <code>&lt;h1&gt;</code>와 <code>&lt;p&gt;</code>를 활용해서 짧은 편지를 써봅시다.</b></p>
+</article>
 
 <!-- 이전/다음 버튼 그룹 -->
 <div class="container btn-progress-group">
