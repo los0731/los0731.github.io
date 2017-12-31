@@ -40,10 +40,12 @@ pre {
   color: #455A64;
 }
 
-ul {
+ul, ol {
   margin: 16px 0;
   padding-left: 24px;
 }
+
+ol li {  padding-left: 4px;  }
 
 li {
   margin: 0 0 8px 0;
