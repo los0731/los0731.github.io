@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <title>GOP html에 스타일을 입힌다.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+<!--홈으로 가기 버튼입니다-->
+<header class="container"><a href="index.html"><img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514269994/img-gnb_c2bzno.png" alt="시작으로 가기" width="96"></a></header>
+
+<!--여기서부터 아티글 입니다.-->
+<article class="container">
+  <h1>HTML에 스타일을 적용하기</h1>
+  <p>
+    HTML을 스타일을 변경하는 언어를 CSS(종속형 시트/Cascading Style Sheets)라고 합니다. 물론 몰라도 CSS를 사용하는데 아무런 문제 없습니다.
+    중요한건 CSS를 이용하면 HTML의 태그를 더 다채롭게 업그레이드 할 수 있다는 것입니다.
+  </p>
+  <p>
+    흰 배경에, 검정 글씨로만 이루어진 웹 페이지는 사실 많지 않아요. 각자 자신만의 스타일을 가지고 있습니다. 예를들어 <code>&lt;h1&gt;</code>의 색상을 파랑색으로 변경하고 싶다거나,
+    본문의 글씨 크기를 조금 더 크게 키우고 싶을 때 어떻게 해야 할까요? 이번 시간에는 HTML에 스타일을 적용하는 방법을 알아 볼 겁니다.
+  </p>
+
+  <h3>첫번째, HTML 태그에 직접 스타일을 부여한다.</h3>
+  <p>
+    h1태그의 배경을 검정으로 바꾸고, 색상을 하얀색으로 하고싶을 때, 할 수 있는 첫번 째 방법은 해당 태그에 직접 스타일을 부여하는 것입니다. 위와 같이 <code>&lt;h1</code>과 <code>&gt;</code> 사이에 <code>style=""</code>을 추가합니다. 따옴표 사이에 스타일을 부여하게 됩니다.
+  </p>
+  <pre><code>&lt;h1 style="background-color: black;"&gt;</code></pre>
+  <p>
+    좀 쉽게 이해하기 위하여 한글로 써볼게요.
+  </p>
+  <pre><code>&lt;h1 스타일="배경-색: 검정;"&gt;</code></pre>
+  <p>
+    스타일을 부여하는 방법은 모두 같습니다.
+    왼쪽에 <code>무엇을 :</code>항목을 작성하고, 한 칸띄고,
+    <code>어떻게;</code>라고 작성하는 방식이죠. 중요한것은 반드시
+    <code>;</code>마크로 이 스타일을 마무리 지어야한다는 것 입니다.
+    tag에서 <code>/</code>와 같은 의미 입니다. 아래의 예시를 통해서 확인해봅시다.
+    h1태그의 컬러를 yellow로 변경해 보세요.
+  </p>
+</article>
+
+<div class="container">
+  <p data-height="242" data-theme-id="32108" data-slug-hash="dc36436934a9bcf44da7bc0531c52348" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="style in tag" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/dc36436934a9bcf44da7bc0531c52348/">style in tag</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+<article class="container">
+  <h3>두번째, head 태그 안에 style 태그를 추가하기</h3>
+  <p>
+    만약 12개의 <code>&lt;h1&gt;</code>가 있을 때, 이 <code>&lt;h1&gt;</code>의 컬러를 blue로 변경해야 한다면 어떻게 할까요? 모든 태그에 <code>style="color: blue;"</code>라고 하면 될 겁니다.
+  </p>
+  <p>
+    하지만 문제는 12번 써야 한다는 것입니다. 만약 12개가 아니고, 100개라면 100번을 써야할 거예요. 그런데, blue로 해놓고, 보니 사실은 red가 더 잘 어울리는 것 같다면 다시 100면을 수정해야하는 상황에 빠질 겁니다.
+  </p>
+  <p>
+    그런 것을 이미 겪은 아주 오래전 선배 개발자들이 <code>&lt;style&gt;</code>라는 것을 만들었습니다. 그리고 이 <code>&lt;style&gt;</code>를 <code>&lt;head&gt;</code>안에다가 숨겨 놓고 사용하기 시작했어요.
+    <code>&lt;head&gt;</code>에는 이처럼 보이지 않는 어떤 태그들을 넣어둘 수 있습니다. <code>&lt;style&gt;</code>태그도 그중 하나죠.
+  </p>
+  <pre><code>&lt;head&gt;
+  &lt;style&gt;
+    h1 { color: blue; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ...
+&lt;/body&gt;</code></pre>
+  <p>
+    아래 예시를 봅시다. 그리고 한줄의 코드만 수정하여 모든 h1태그의 컬러를 orange로 변경해 보세요.
+  </p>
+</article>
+
+<div class="container">
+  <p data-height="560" data-theme-id="32108" data-slug-hash="40c6e0a07f4586e28ad468ce00a90eb9" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="style tag in head tag" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/40c6e0a07f4586e28ad468ce00a90eb9/">style tag in head tag</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+<article class="container">
+  <h3>마지막, CSS 스타일들만 담겨있는 별도의 공간을 만들기</h3>
+  <p>
+    위에 style태그를 활용해서 여러개의 태그를 컨트롤 했습니다.
+    만약 h1태그가 10개씩 들어있는 HTML문서가 50개인 웹 서비스가 있다면 어떻게 해야 할까요?
+    실제로 우리가 이용하는 웹 서비스들은 더 많은 수의 html파일로 이루어져 있거든요.
+  </p>
+  <p>
+    따라서 50개의 HTML에 동시에 적용할 수 있는 CSS 연결고리가 필요합니다.
+    하지만 우리가 50개의 HTML 문서를 만들면서 할 수 있는건, 지금은 없기 때문에 여기서는 배우지 않겠습니다. 대신! Codepen에 있는 CSS 항목을 작성하는 것으로 CSS를 더 익숙해 지도록 합시다. 아래 예시의 상단에 에서 CSS 버튼을 클릭해 보세요. 마찬가지로 h1 태그의 컬러를 orange로 변경해 봅시다.
+  </p>
+</article>
+
+<div class="container">
+  <p data-height="560" data-theme-id="32108" data-slug-hash="97912f34590a19828c3e7b4880b601b0" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="html & css" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/97912f34590a19828c3e7b4880b601b0/">html & css</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+<article class="container">
+  <p>
+    <b>다음시간에는 HTML과 CSS를 활용해서 생일카드를 만들어 봅시다.</b>
+  </p>
+</article>
+
+
+
+<!-- 이전/다음 버튼 그룹 -->
+<div class="container btn-progress-group">
+  <a href="gop-1-4.html" class="btn btn-lg btn-dark">〈 PREV</a>
+  <a href="gop-template.html" class="btn btn-lg btn-dark">NEXT 〉</a>
+</div>
+
+<!-- 라이브리 시티 설치 코드 -->
+<article class="container">
+  <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjY5NC85MjU1">
+    <script type="text/javascript">
+        (function(d, s) {
+            var j, e = d.getElementsByTagName(s)[0];
+
+            if (typeof LivereTower === 'function') { return; }
+
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+
+            e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+    </script>
+    <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+  </div>
+</article>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

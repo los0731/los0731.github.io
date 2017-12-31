@@ -26,6 +26,8 @@ code {
   color: #455A64;
 }
 
+code b {color: black;}
+
 blockquote {
   margin: 24px 0;
   padding: 8px 16px;
