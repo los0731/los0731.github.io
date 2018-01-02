@@ -161,7 +161,7 @@ li {
   left: 16px;
   content: "1";
   color: transparent;
-  font-size: 0.1;
+  font-size: 1px;
   width: 80px;
   height: 4px;
   background-color: #455964;
@@ -199,10 +199,11 @@ li {
   background: #263238;
 }
 
-/* 전체 화면의 가이드/에디터/완성코드 페이지 */
+/* editor-full 전체 화면의 가이드/에디터/완성코드 페이지 */
 .header-editor {
   background-color: #455964;
 }
+
 
 .editor-full .guide,
 .editor-full .editor,
@@ -252,7 +253,7 @@ li {
   .editor-full .guide,
   .editor-full .guide .body {
     height: auto;
-    min-height: auto;
+    min-height: unset;
   }
 }
 

@@ -1,0 +1,140 @@
+<!doctype html>
+<html xmlns="">
+<head>
+  <title>GOP 템플릿</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+<!--홈으로 가기 버튼입니다-->
+<header class="container">
+  <a href="index.html"><img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514269994/img-gnb_c2bzno.png" alt="시작으로 가기" width="96"></a>
+</header>
+
+<!--여기서부터 아티글 입니다.-->
+<article class="container">
+  <h1>애니메이션 카드</h1>
+  <p>
+    이번 시간에는 애니메이션이 첨가된 온라인 카드를 만들어 봅시다.
+    저는 이제 곧 30세가 되는 친구 지영이를 위해 온라인 축하 카드를 만들어 봤어요.
+    지영이에게는 카톡으로 url을 보낼 예정이구요, 그 url을 클릭했을 때,
+    생일 축하 카드가 보이도록 할 겁니다.
+  </p>
+
+  <h3>최종 결과물</h3>
+  <p data-height="640" data-theme-id="32108" data-slug-hash="266a9fcc4cdaea40bedbc40ca18b4383" data-default-tab="result" data-user="los0731" data-embed-version="2" data-pen-title="A card that opens when you click it." data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/266a9fcc4cdaea40bedbc40ca18b4383/">A card that opens when you click it.</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+  <h3>사용된 요소들</h3>
+  <pre><code>HTML Tags
+└ &lt;meta charset="utf-8"&gt; <span class="caption">/* utf-8 인코딩, 한글을 보이도록 해준다. */</span>
+└ &lt;meta name="viewport" content="width=device-width, user-scalable=no"&gt; <span class="caption">/* 모바일에 최적화된 해당도로 맞춰준다. <a
+      href="https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag">자세히보기</a>*/</span>
+└ &lt;h1&gt;&lt;/h1&gt;
+└ &lt;p&gt;&lt;/p&gt;
+└ &lt;a href="https://link.com"&gt;&lt;/a&gt;
+└ &lt;div&gt;&lt;/div&gt;
+└ &lt;img src="https://sourse-url.com"&gt;
+
+CSS Properties
+└ display: flex; <span class="caption">/* flex box <a href="https://joshuajangblog.wordpress.com/2016/09/19/learn-css-flexbox-in-3mins/">자세히보기</a> */</span>
+└ justify-content: center;
+└ align-items: center:
+└ margin: 0;
+└ padding: 20px;
+└ background: #ffffff url('https://sourse-url.com') no-repeat center;  <span class="caption">/* src 앞의 컬러 값은 이미지 밑의 컬러, 이미지 로딩시 보이게 됩니다. */</span>
+└ background-size: cover; <span class="caption">/* 배경 이미지를 영역에 딱 맞게 채워줍니다. */</span>
+└ background-color: white;
+└ width: 100px;
+└ max-width: 200px; <span class="caption">/* width가 최대 200px을 넘지 않습니다. 그리고 max-height */</span>
+└ position: fixed; <span class="caption">/* 위치를 고정, 스크롤해도 그 자리에서 움직이지 않습니다. <a href="https://developer.mozilla.org/ko/docs/Web/CSS/position">자세히보기</a> */</span>
+└ top: 50% <span class="caption">/* top에서 50%위치 만큼 아래에 위치합니다. */</span>
+└ transition: 1s; <span class="caption">/* 어떤 변화든 1초동안 부드럽게 진행됩니다. <a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">자세히보기</a> *</span>
+└ transform: translateX(-50%) translateY(-50%); <span class="caption">/* 트렌스폼: 이동, 회전, 시전, 크기 등을 변형합니다. <a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms">자세히보기</a> *</span>
+└ border-radius: 10px; <span class="caption">/* 모서리를 둥글게! */</span>
+└ box-shadow: 0 40px 80px -40px rgba(50,50,80,.8); <span class="caption">/* 그림자, 값은 순서대로 x축, y축, 흐림, 크기입니다. */</span>
+└ overflow-y: scroll; <span class="caption">/* 내용이 세로영역보다 길어지면, 스크롤 되도록 합니다. */</span>
+└ -webkit-overflow-scrolling: touch; <span class="caption">/* 모바일에서 스크롤이 부드럽게! */</span>
+└ .class::-webkit-scrollbar { display: none; } <span class="caption">/* webkit 계열(크롬,파폭 외)에서 스크롤바를 보이지 않도록 합니다. */</span>
+└ font-size: 18px;
+└ line-height: 26px;
+└ font-weight: 700;
+└ display: none;</code></pre>
+</article>
+
+<ul class="list-tutorials container-fluid">
+  <li><h3 class="col-12 col-sm-12 col-md-4 col-lg-2">튜토리얼 시작</h3></li>
+
+  <li>
+    <div class="guide col-12 col-sm-12 col-md-4 col-lg-2">
+      <p>우선, 여기서부터 시작합니다. 아직 아무 코드도 작성하지 않았어요. 이 카드는 모바일에서 보여질 수도 있기 때문에, 모바일에서도 해상도가 최적회 되도록 나오는 코드를 <code>head</code>태그 안에 추가합니다.</p>
+      <pre><code>&lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, user-scalable=no"&gt;
+&lt;/head&gt;</code></pre>
+    </div>
+    <div class="col-12 col-sm-12 col-md-8 col-lg-10">
+      <p data-height="300" data-theme-id="32108" data-slug-hash="e710a2ddce5983259894936b142359f6" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="default setting" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/e710a2ddce5983259894936b142359f6/">default setting</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+  <li>
+    <div class="guide col-12 col-sm-12 col-md-4 col-lg-2">
+      <p>우선, 여기서부터 시작합니다. 아직 아무 코드도 작성하지 않았어요.</p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-8 col-lg-10">
+      <p data-height="300" data-theme-id="32108" data-slug-hash="e710a2ddce5983259894936b142359f6" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="default setting" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/e710a2ddce5983259894936b142359f6/">default setting</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+</ul>
+
+
+<article class="container">
+  <h3>고생하셨습니다!</h3>
+  <p>
+    멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요?
+  </p>
+</article>
+
+<!-- 버튼 그룹 -->
+<div class="container btn-progress-group">
+  <a href="gop-template-editor.html" class="btn btn-lg btn-dark">〈 PREV</a>
+  <a href="gop-template-editor.html" class="btn btn-lg btn-dark">NEXT 〉</a>
+</div>
+
+<!-- 라이브리 시티 설치 코드 -->
+<article class="container">
+  <div class="container" >
+
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjY5NC85MjU1">
+      <script type="text/javascript">
+        (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+
+          if (typeof LivereTower === 'function') { return; }
+
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+
+          e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+      </script>
+      <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+    </div>
+    <!-- 시티 설치 코드 끝 -->
+  </div>
+</article>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
