@@ -27,12 +27,74 @@
   <h3>최종 결과물</h3>
   <p data-height="640" data-theme-id="32108" data-slug-hash="266a9fcc4cdaea40bedbc40ca18b4383" data-default-tab="result" data-user="los0731" data-embed-version="2" data-pen-title="A card that opens when you click it." data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/266a9fcc4cdaea40bedbc40ca18b4383/">A card that opens when you click it.</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+  <h6 class="caption">이걸 어떻게 만들까요? 대충 감이 오나요?</h6>
+
+  <h3>어떤 구조로 만들까?</h3>
+  <p>
+    코드를 작성하기 앞서, 스케치를 해보는 것은 좋은 습관이죠.
+    저는 앞면, 뒷면의 두장의 카드를 따로 만든 후, 이걸 겹쳐서 앞면이 위로 올라가도록 만들 생각입니다.
+    그리고, 마우스를 올리거나, 터치했을 때 앞면이 옆으로 스륵 밀려나는 효과를 주면 되겠네요.
+  </p>
+</article>
+<div class="container-lg">
+  <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514978828/img-11-sketch_rfdvzq.png" width="100%">
+</div>
+<article class="container">
+  <h3>튜토리얼</h3>
+  <p>그럼 이제부터 한줄 한줄 코드를 작성해봅시다.</p>
+</article>
+
+<ul class="list-tutorials container-fluid">
+  <li>
+    <div class="guide col-12 col-sm-12 col-md-12 col-lg-4">
+      <label class="badge badge-dark">1</label>
+      <p>
+        우선, 여기서부터 시작합니다. 아직 아무 코드도 작성하지 않았어요.
+        언제나 가장 먼저 하는것은 <code>head</code>해드에 적절한 코드를 넣어주는 것입니다. 저는 <code>title</code>태그를 먼저 넣습니다.
+      </p>
+      <p>
+        그리고, 모바일을 고려한다는 생각이 익숙하지 않다면 생각하기 쉽지 않겠지만, 지금 경험을 바탕으로 앞으로는 모바일을 고려해야할지, 아닐지를 미리 선택하면 좋습니다.
+        우선 google 해당 내용을 <a href="https://www.google.co.kr/search?q=html+%EB%AA%A8%EB%B0%94%EC%9D%BC+%EC%B5%9C%EC%A0%81%ED%99%94&oq=html+%EB%AA%A8%EB%B0%94%EC%9D%BC+%EC%B5%9C%EC%A0%81%ED%99%94&aqs=chrome..69i57.4362j0j1&sourceid=chrome&ie=UTF-8" target="_blank">검색</a>해보면 <code>head</code>태그 안에 아래의 메타태그를 추가하라고 되어있네요.
+        그대로 추가 합니다.
+      </p>
+    </div>
+    <div class="code-editor col-12 col-sm-12 col-md-12 col-lg-8">
+      <p data-height="600" data-theme-id="32108" data-slug-hash="3da8f1279275fcae2e3f81281bb1c58a" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="animation card - step 1" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/3da8f1279275fcae2e3f81281bb1c58a/">animation card - step 1</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+  <li>
+    <div class="guide col-12 col-sm-12 col-md-12 col-lg-4">
+      <p>
+        이미지가 배경에 꽉 차도록 <code>body</code>에 <code>background</code>속성을 줍니다. 중요한건 어떤 이미지인가 인데요. <a href="www.unsplash.com" target="_blank">unsplash.com</a>에 접속하면 전문가들이 찍어 놓은 이미지들이 많습니다.
+        모든 사진 이미지들이 전부 높은 퀄리티라서, 이곳에서 아무거나 마음에 드는것으로 선택한 후, url만 가지고 오도록 하겠습니다. 이렇게 배경을 깔아주면서, 이미지가 반복되지 않고, center에 위치하도록 작성해 줍니다.
+      </p>
+      <p>
+        마지막으로 화면이 커지면 아래에 하얀 공간이 생기는걸 확인할 수 있어요. 이건 이미지의 비율이나 높이가 짧아서 그렇게 되는건데, 배경에 꽉 채워지는 속성은 cover입니다.
+        항상 배경에 이미지를 깔고 싶다면 이런 코드들을 같이 작성해주어야 합니다.
+      </p>
+    </div>
+    <div class="code-editor col-12 col-sm-12 col-md-12 col-lg-8">
+      <p data-height="600" data-theme-id="32108" data-slug-hash="4569fc24593f95b45f79350ba8ab9b3a" data-default-tab="css,result" data-user="los0731" data-embed-version="2" data-pen-title="animation card - step 2" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/4569fc24593f95b45f79350ba8ab9b3a/">animation card - step 2</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+</ul>
+
+
+<article class="container">
+  <h3>고생하셨습니다!</h3>
+  <p>
+    멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요?
+  </p>
 
   <h3>사용된 요소들</h3>
   <pre><code>HTML Tags
 └ &lt;meta charset="utf-8"&gt; <span class="caption">/* utf-8 인코딩, 한글을 보이도록 해준다. */</span>
 └ &lt;meta name="viewport" content="width=device-width, user-scalable=no"&gt; <span class="caption">/* 모바일에 최적화된 해당도로 맞춰준다. <a
-      href="https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag">자세히보기</a>*/</span>
+        href="https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag">자세히보기</a>*/</span>
 └ &lt;h1&gt;&lt;/h1&gt;
 └ &lt;p&gt;&lt;/p&gt;
 └ &lt;a href="https://link.com"&gt;&lt;/a&gt;
@@ -63,42 +125,6 @@ CSS Properties
 └ line-height: 26px;
 └ font-weight: 700;
 └ display: none;</code></pre>
-</article>
-
-<ul class="list-tutorials container-fluid">
-  <li><h3 class="col-12 col-sm-12 col-md-4 col-lg-2">튜토리얼 시작</h3></li>
-
-  <li>
-    <div class="guide col-12 col-sm-12 col-md-4 col-lg-2">
-      <p>우선, 여기서부터 시작합니다. 아직 아무 코드도 작성하지 않았어요. 이 카드는 모바일에서 보여질 수도 있기 때문에, 모바일에서도 해상도가 최적회 되도록 나오는 코드를 <code>head</code>태그 안에 추가합니다.</p>
-      <pre><code>&lt;head&gt;
-  &lt;meta name="viewport" content="width=device-width, user-scalable=no"&gt;
-&lt;/head&gt;</code></pre>
-    </div>
-    <div class="col-12 col-sm-12 col-md-8 col-lg-10">
-      <p data-height="300" data-theme-id="32108" data-slug-hash="e710a2ddce5983259894936b142359f6" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="default setting" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/e710a2ddce5983259894936b142359f6/">default setting</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-    </div>
-  </li>
-
-  <li>
-    <div class="guide col-12 col-sm-12 col-md-4 col-lg-2">
-      <p>우선, 여기서부터 시작합니다. 아직 아무 코드도 작성하지 않았어요.</p>
-    </div>
-    <div class="col-12 col-sm-12 col-md-8 col-lg-10">
-      <p data-height="300" data-theme-id="32108" data-slug-hash="e710a2ddce5983259894936b142359f6" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="default setting" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/e710a2ddce5983259894936b142359f6/">default setting</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-    </div>
-  </li>
-
-</ul>
-
-
-<article class="container">
-  <h3>고생하셨습니다!</h3>
-  <p>
-    멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요? 멋져요. 어때요? 할만했나요?
-  </p>
 </article>
 
 <!-- 버튼 그룹 -->
