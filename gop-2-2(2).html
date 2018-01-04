@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+  <title>GOP 2-2 초대장을 만들어봅시다.(2)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+<!--홈으로 가기 버튼입니다-->
+<header class="container"><a href="index.html"><img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514269994/img-gnb_c2bzno.png" alt="시작으로 가기" width="96"></a></header>
+
+<!--여기서부터 아티글 입니다.-->
+<article class="container">
+  <div class="code summary">
+    <h5>사용하는 태그/스타일</h5>
+    <ul>
+      <li>
+        <span class="badge-summary">&lt;ol&gt;</span>ol tag(순서가 있는 리스트/목록) 블라블라블라블라블라블라블라블라블라블라블라
+        <span class="badge-summary">&lt;ul&gt;</span>ul tag(순서가 없는 리스트/목록) 블라블라블라블라블라블라블라블라블라블라블라
+      </li>
+    </ul>
+  </div>
+
+  <h1>초대장을 만들어봅시다.(2)</h1>
+  <p>
+    누군가를 초대하거나, 반대로 누군가에게 초대를 받는 일은 정말 즐거운 일이죠. 만약 그 초대장이 직접 만든 것이라면 더 멋질 거예요.
+  </p>
+  <blockquote>
+    Hi! there!<br>
+    당신을 GOP의 프로그래밍 파티에 초대합니다.<br>
+    <img src="https://cdn.pixabay.com/photo/2017/01/17/03/57/season-1985856_1280.jpg" alt="프로그래밍 파티 이미지" width="100%">
+    맛있는 음식과 센스있는 음악, 개성 넘치는 친구들이 있으니 놀러오세요.<br><br>
+    <ul>
+      <li>준비물: 노트북, 나만의 소울 푸드</li>
+      <li>장소: 서울시 강남구 역삼동</li>
+      <li>시간: 해가 진 7시</li>
+    </ul><br>
+    유의사항: 포트락(Potluck)파티이기 때문에 참석자들은 자신의 취향에 맞는 요리나 와인 등을 가지고 와야 합니다!
+  </blockquote>
+
+  <p>아래의 순서대로 하나하나 해봅시다.</p>
+  <p>지난 시간에 이미 초대장의 제목과 본문, 이미지를 추가 했습니다. 오늘은 준비물과 장소, 시간을 <b>목록(리스트)</b>으로 표현해보겠습니다. </p>
+
+</article>
+
+<ul class="list-tutorials container-fluid container-lg">
+  <li >
+    <div class="guide col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+      <p>
+        HTML은 웹페이지에 1) 2) 3) 과 같이 <b>순서가 있는</b> 리스트를 표현할 수 있습니다. 바로 <code>&lt;ol&gt;</code>태그이고, 여기서 <b>ol</b>은 <b>ordered list</b>의 줄임말입니다. 열린 태그 <code>&lt;ol&gt;</code>와 닫는 태그<code>&lt;/ol&gt;</code>를 사용해서 브라우저에게 '순서가 있는 리스트를 만들거야!'라고 말해준 뒤, 그 사이에 <b>리스트의 항목(list item)</b>을 넣는 방법이지요. 리스트의 항목은 <code>&lt;li&gt;</code><code>&lt;/li&gt;</code>태그를 사용해서 넣을 수 있습니다.  
+        <pre><code>&lt;ol&gt;<br>  &lt;li&gt;첫 번째 항목&lt;/li&gt;<br>  &lt;li&gt;두 번째 항목&lt;/li&gt;<br>  &lt;li&gt;세 번째 항목&lt;/li&gt;<br>&lt;/ol&gt;</code></pre>
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+      <p data-height="300" data-theme-id="32108" data-slug-hash="6d3da73742a541ee8a90f3285c671b4e" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="invite letter(5)" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/6d3da73742a541ee8a90f3285c671b4e/">invite letter(5)</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+  <li >
+    <div class="guide col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+      <p>
+        <b>순서가 없는</b> 리스트를 표현할 수도 있습니다. <code>&lt;ul&gt;</code>태그이고, <b>unordered list</b>의 줄임말입니다. 위에서 배웠던 <code>&lt;ol&gt;</code>태그와 사용법이 같으니 결과창에서 바로 확인해보세요. 
+        <pre><code>&lt;ul&gt;<br>  &lt;li&gt;첫 번째 항목&lt;/li&gt;<br>  &lt;li&gt;두 번째 항목&lt;/li&gt;<br>  &lt;li&gt;세 번째 항목&lt;/li&gt;<br>&lt;/ul&gt;</code></pre>
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+      <p data-height="300" data-theme-id="32108" data-slug-hash="09859528d828eefbd8f028f1806ba9b5" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="invite letter(6)" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/09859528d828eefbd8f028f1806ba9b5/">invite letter(6)</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+
+  <li>
+    <div class="guide col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+      <p>
+        지금부터는 보너스 시간입니다! 강조하고 싶은 글씨가 있을 때 사용하는 두가지 태그를 알려드릴게요. <code>&lt;b&gt;</code>는 <b>bold, 두꺼운</b>이라는 의미로 글씨가 진하게 나타납니다. <code>&lt;i&gt;</code>은 <i>italic, 기울어진</i>이라는 의미로 글씨가 기울어지죠. 열린 태그와 닫는 태그로 감싼 후 사이에 강조하고 싶은 글씨를 적으면 끝!<pre><code>&lt;b&gt;진하게진하게&lt;/b&gt;<br>&lt;i&gt;기울게기울게&lt;/i&gt;</pre></code>
+      </p>
+      <p>초대장 안에 숨겨진 <code>&lt;b&gt;</code>태그와 <code>&lt;i&gt;</code>태그를 찾아보세요.</p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+      <p data-height="300" data-theme-id="32108" data-slug-hash="xpXGPx" data-default-tab="html,result" data-user="los0731" data-embed-version="2" data-pen-title="invite letter(7)" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/xpXGPx/">invite letter(7)</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
+  </li>
+</ul>
+
+<article class="container">
+  <h1>좋습니다!</h1>
+  <p>꽤나 괜찮은 초대장이 완성되었습니다. 그럼 GOP의 프로그래밍 파티에서 뵙겠습니다. 
+  </p>
+
+  <p>
+    <b>다음 시간에는 뭐 배우지?<b>
+
+  </p>
+</article>
+
+
+
+<!-- 이전/다음 버튼 그룹 -->
+<div class="container btn-progress-group">
+  <a href="gop-1-4.html" class="btn btn-lg btn-dark">〈 PREV</a>
+  <a href="gop-template.html" class="btn btn-lg btn-dark">NEXT 〉</a>
+</div>
+
+<!-- 라이브리 시티 설치 코드 -->
+<article class="container">
+  <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjY5NC85MjU1">
+    <script type="text/javascript">
+        (function(d, s) {
+            var j, e = d.getElementsByTagName(s)[0];
+
+            if (typeof LivereTower === 'function') { return; }
+
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+
+            e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+    </script>
+    <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+  </div>
+</article>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
