@@ -5,6 +5,18 @@
   margin-right: auto;
 }
 
+.container-xl {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: rgba(50,50,80,.02);
+}
+
 .container-sm,
 header.container,
 article.container  {max-width:720px;}
@@ -21,7 +33,7 @@ p, h5 {
 
 hr {margin: 80px 0;}
 
-img, .btn {margin:24px 0;}
+img, .btn {margin: 24px 0;}
 
 img {border-radius: 4px;}
 
@@ -146,37 +158,21 @@ li {
   }
 }
 
-.list-tutorials li,
+.list-tutorials > li,
 .list-tutorials .cp_embed_wrapper {margin: 0;}
 
-.list-tutorials li {
+.list-tutorials > li {
   display: flex;
   position: relative;
   flex-wrap: wrap;
   margin-bottom: 80px;
 }
 
-.list-tutorials li .guide {
+.list-tutorials > li .guide {
   padding-top: 24px;
 }
 
-@media (min-width: 1800px) {
-  .list-tutorials li .guide {
-    max-width: 24%;
-    -moz-flex: 0 0 24%;
-    -ms-flex: 0 0 24%;
-    flex: 0 0 24%;
-  }
-
-  .list-tutorials li .code-editor {
-    max-width: 76%;
-    -moz-flex: 0 0 76%;
-    -ms-flex: 0 0 76%;
-    flex: 0 0 76%;
-  }
-}
-
-.list-tutorials li .guide::before {
+.list-tutorials > li .guide::before {
   position: absolute;
   top: 0;
   left: 16px;
@@ -188,7 +184,44 @@ li {
   background-color: #455964;
 }
 
-.list-tutorials li img {
+@media (min-width: 1800px) {
+  .list-tutorials > li .guide {
+    max-width: 24%;
+    -moz-flex: 0 0 24%;
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+  }
+
+  .list-tutorials > li .code-editor {
+    max-width: 76%;
+    -moz-flex: 0 0 76%;
+    -ms-flex: 0 0 76%;
+    flex: 0 0 76%;
+  }
+}
+
+.list-tutorials > li .guide > ol,
+.list-tutorials > li .guide > ul {
+  padding: 12px 12px 12px 30px;
+  border-radius: 3px;
+  background-color: #ECEFF1;
+  margin: 24px 0;
+}
+
+.list-tutorials > li .guide > ol > li,
+.list-tutorials > li .guide > ul > li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.list-tutorials > li .guide > ol > li code,
+.list-tutorials > li .guide > ul > li code {
+  color: #263238;
+  background-color: #CFD8DC;
+}
+
+.list-tutorials > li img {
   margin: 0;
 }
 
