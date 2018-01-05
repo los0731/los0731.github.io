@@ -22,10 +22,9 @@
     저는 이제 곧 30세가 되는 친구 지영이를 위해 온라인 축하 카드를 만들겁니다.
     지영이에게는 카톡으로 url을 보낼 예정이구요, 그 url을 클릭했을 때, 생일 축하 카드가 보이도록 할 겁니다.
   </p>
-  <h3>스케치를 좀 해볼게요.</h3>
   <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1515074545/img-card-sketch_fh6ank.png" width="100%" class="mt-0">
+  <h6 class="caption">코드를 작성하기 앞서, 스케치를 해보는 것은 좋은 습관입니다.</h6>
   <p>
-    코드를 작성하기 앞서, 스케치를 해보는 것은 좋은 습관입니다.
     저는 앞면, 뒷면의 두장의 카드를 따로 만든 후, 이걸 겹쳐서 앞면이 위로 올라가도록 만들 생각입니다.
     그리고, 마우스를 올리거나, 터치했을 때 앞면이 옆으로 스륵 밀려나는 효과를 주면 되겠네요.
   </p>
@@ -68,7 +67,7 @@
       </ol>
     </div>
     <div class="code-editor col-12 col-sm-12 col-md-12 col-lg-8">
-      <div style="background: url('https://res.cloudinary.com/dyiqg9qhi/image/upload/v1515077865/img-unsplash_xspd5g.png') no-repeat top; background-size: cover; height: 640px; border: 1px solid #ECEFF1; border-radius: 3px;"></div>
+      <div style="background: url('https://res.cloudinary.com/dyiqg9qhi/image/upload/v1515154447/img-unsplash_w7yptf.png') no-repeat top; background-size: cover; height: 640px; border-radius: 3px;"></div>
     </div>
   </li>
 
@@ -91,7 +90,24 @@
     </div>
   </li>
 
+  <li>
+    <div class="guide col-12 col-sm-12 col-md-12 col-lg-4">
+      <label class="badge badge-dark">4</label>
+      <p>
+        HTML의 <code>body</code>태그에는 기본적으로 <code>margin: 8px;</code>이 적용되어 있다고 합니다. 그래서 배경을 전부 사용해야할 경우에는 이 마진을 제거해 줘야합니다.
+        그리고 이 <code>background</code> 속성을 활용하여 위에서 선택한 이미지를 채웁니다. 그리고 <code>background-size</code>를 <code>cover</code>로 지정해 줍니다.
+      </p>
+      <p>
+        여기까지 했을 경우, 이미지에 따라 다르겠지만, 이미지가 배경에 다 차지 않게 될거예요. 따라서, <code>body</code>태그의 높이를 브라우저의 높이로 고정해줘야합니다. 그것은 <code>height: 100vh;</code>라고 합니다.
+        vh는 viewport height의 약자로, viewport 쉽게 말해 브라우저에 웹 페이지가 표시되는 영역이라고 생각하시면 편리합니다. 좀더 자세히 알고 싶다면 <a href="http://m.mkexdev.net/34" target="_blank">여기</a>을 클릭하세요.
+      </p>
 
+    </div>
+    <div class="code-editor col-12 col-sm-12 col-md-12 col-lg-8">
+      <p data-height="600" data-theme-id="32108" data-slug-hash="4569fc24593f95b45f79350ba8ab9b3a" data-default-tab="css,result" data-user="los0731" data-embed-version="2" data-pen-title="animation card - step 2" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/los0731/pen/4569fc24593f95b45f79350ba8ab9b3a/">animation card - step 2</a> by los0731 (<a href="https://codepen.io/los0731">@los0731</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </li>
 
 </ul>
 

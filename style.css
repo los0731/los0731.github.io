@@ -14,7 +14,6 @@
 .container-fluid {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: rgba(50,50,80,.02);
 }
 
 .container-sm,
@@ -34,6 +33,10 @@ p, h5 {
 hr {margin: 80px 0;}
 
 img, .btn {margin: 24px 0;}
+
+img + .caption {
+  margin-top: 0;
+}
 
 img {border-radius: 4px;}
 
