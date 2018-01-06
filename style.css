@@ -1,4 +1,8 @@
 /* 컨테이너 */
+.container-sm,
+header.container,
+article.container  {max-width:720px;}
+
 .container-lg {
   max-width: 1200px;
   margin-left: auto;
@@ -11,39 +15,32 @@
   margin-right: auto;
 }
 
-.container-fluid {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.container-sm,
-header.container,
-article.container  {max-width:720px;}
-
 /* 공통 엘레먼트 */
 h1, h2, h3, h4, b {font-weight: 900;}
 
 h1, h2, h3 {margin: 40px 0 24px 0;}
 
-p, h5 {
-  font-size: 20px;
-  line-height: 34px;
-}
+p, h5 {font-size: 20px; line-height: 34px;}
 
 hr {margin: 80px 0;}
 
 img, .btn {margin: 24px 0;}
 
-img + .caption {
-  margin-top: 0;
-}
+img + .caption {margin: -8px 0 40px 0;}
 
 img {border-radius: 4px;}
 
-code {
+pre {
+  font-family: "Source Code Pro", Monaco, monospace, sans-serif;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 24px;
   background-color: #ECEFF1;
   color: #455A64;
+  border-radius: 4px;
 }
+
+code {background-color: #ECEFF1; color: #455A64;}
 
 code b {color: black;}
 
@@ -56,20 +53,7 @@ blockquote {
   font-style: italic;
 }
 
-pre {
-  font-family: "Source Code Pro", Monaco, monospace, sans-serif;
-  padding: 16px 24px;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: #ECEFF1;
-  color: #455A64;
-  border-radius: 4px;
-}
-
-ul, ol {
-  margin: 16px 0;
-  padding-left: 24px;
-}
+ul, ol {margin: 16px 0; padding-left: 24px;}
 
 ol li {  padding-left: 4px;  }
 
@@ -95,17 +79,16 @@ li {
   -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
 }
 
-.code h1,
-.code h2,
-.code h3,
-.code h4,
-.code h5,
-.code h6,
-.code p {
-  margin: 0;
+.code h1, .code h2, .code h3,
+.code h4, .code h5, .code h6,
+.code p {margin: 0;}
+
+/* 글로벌 네비게이션 버튼 */
+a[href="index.html"] img {
+  margin: 15px 0;
 }
 
-/* 챕터 상단에 나오는 배우는 것들 */
+/* 사용된 요소들 */
 .summary h5 {
   margin: 0;
   color: #263238;
@@ -113,6 +96,7 @@ li {
   line-height: 24px;
   font-weight: bold;
 }
+
 .summary p {
   margin: 0 0 8px 0;
   font-size: 16px;
@@ -124,6 +108,7 @@ li {
   padding-left: 0;
   list-style: none;
 }
+
 .summary li {
   font-size: 16px;
   line-height: 24px;
@@ -139,6 +124,7 @@ li {
   font-weight: 900;
   /*background-color: #CFD8DC;*/
 }
+
 .badge-summary::after {
   content: "─";
   margin: 0 8px;
@@ -147,7 +133,6 @@ li {
 
 /* 튜토리얼 타입의 리스트 */
 .list-tutorials {
-  /* 튜토리얼 형식의 좌 설명, 우 코드(이미지)의 리스트 */
   list-style: none;
   padding-left: 0;
   margin-top: 40px;
@@ -171,21 +156,20 @@ li {
   margin-bottom: 80px;
 }
 
-.list-tutorials > li .guide {
-  padding-top: 24px;
-}
+/*
+.list-tutorials > li .guide {padding-top: 24px;}
 
-.list-tutorials > li .guide::before {
+ .list-tutorials > li .guide::before {
   position: absolute;
   top: 0;
   left: 16px;
   content: "1";
   color: transparent;
   font-size: 1px;
-  width: 80px;
-  height: 4px;
-  background-color: #455964;
-}
+  width: 100%;
+  height: 2px;
+  background-color: #ECEFF1;
+} */
 
 @media (min-width: 1800px) {
   .list-tutorials > li .guide {
