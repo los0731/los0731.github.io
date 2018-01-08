@@ -156,21 +156,6 @@ a[href="index.html"] img {
   margin-bottom: 80px;
 }
 
-/*
-.list-tutorials > li .guide {padding-top: 24px;}
-
- .list-tutorials > li .guide::before {
-  position: absolute;
-  top: 0;
-  left: 16px;
-  content: "1";
-  color: transparent;
-  font-size: 1px;
-  width: 100%;
-  height: 2px;
-  background-color: #ECEFF1;
-} */
-
 @media (min-width: 1800px) {
   .list-tutorials > li .guide {
     max-width: 24%;
